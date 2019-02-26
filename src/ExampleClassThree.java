@@ -1,4 +1,4 @@
-public class ExampleMethodThree extends ExampleClassTwo {
+public class ExampleClassThree extends ExampleClassTwo {
 
     @Override
     public int exampleMethodToOverride(int integer) {

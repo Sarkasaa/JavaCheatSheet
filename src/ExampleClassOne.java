@@ -1,17 +1,19 @@
-public class ExampleClass { // public: verfügbar für jede andere Klasse und Package
+public class ExampleClassOne { // public: verfügbar für jede andere Klasse und Package
 
     int exampleInt = 4; // long, int, short, char, byte, double, float, boolean: native Types: Typen, die keine Klassen oder Objekte sind
 
     public static void main(String[] args) { // static: kann ohne Instanz aufgerufen werden, bzw. kann auch nicht als Instanz aufgerufen werden
         // ist die Hauptmethode, wird aufgerufen, wenn das Programm startet
 
-        ExampleClass exampleInstance; // neue Variable des Typen ExampleClass
+        ExampleClassOne exampleInstance; // neue Variable des Typen ExampleClassOne
 
-        exampleInstance = new ExampleClass(); // Instanzierung eines Objekts der Klasse ExampleClass
+        exampleInstance = new ExampleClassOne(); // Instanzierung eines Objekts der Klasse ExampleClassOne
 
         int resultInt = exampleInstance.privateExampleMethod(exampleInstance.exampleInt); // Lokale Variable, da sie in einer Methode definiert wird
 
         System.out.println(resultInt);
+
+        System.out.println(ExampleEnum.RED.colorHex);
 
     }
 

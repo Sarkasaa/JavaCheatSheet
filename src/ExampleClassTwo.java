@@ -1,8 +1,8 @@
 public class ExampleClassTwo implements IExampleInterface { // implements: implementiert die abstrakten Methoden des Interfaces
 
 
-    public ExampleClassTwo() {
-
+    public ExampleClassTwo() { // constructor: wird aufgerufen, sobald die Klasse instanziert wird
+        System.out.println("hey it's me, the constructor");
     }
 
     @Override // Hinweis, dass eine Methode überschrieben wird
